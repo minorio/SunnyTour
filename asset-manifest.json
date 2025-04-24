@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/SunnyTour/static/css/main.ebf1cb38.css",
+    "main.js": "/SunnyTour/static/js/main.26bddea6.js",
+    "static/media/heroSectionBg.png": "/SunnyTour/static/media/heroSectionBg.ce545ad6f288c4f8a6db.png",
+    "static/media/plitvice.png": "/SunnyTour/static/media/plitvice.24da759fd7d03604efe9.png",
+    "static/media/bergen.png": "/SunnyTour/static/media/bergen.4a7a697edd3744312332.png",
+    "static/media/heroSection-bg.jpg": "/SunnyTour/static/media/heroSection-bg.28e85245e7cbe415816e.jpg",
+    "static/media/weeklyOffer.png": "/SunnyTour/static/media/weeklyOffer.d2bfe7dbffa15c9f2acf.png",
+    "static/media/brayes.png": "/SunnyTour/static/media/brayes.44beac6de99f5c360e54.png",
+    "static/media/kotor.png": "/SunnyTour/static/media/kotor.3ecbf3b223ed7dc604d8.png",
+    "static/media/desert.jpg": "/SunnyTour/static/media/desert.a4687d1dc1b54849af98.jpg",
+    "static/media/moon.png": "/SunnyTour/static/media/moon.0e056a44c5f23d23cc10.png",
+    "static/media/sun.png": "/SunnyTour/static/media/sun.ea3ec37f5ad5330d0444.png",
+    "static/media/heroSectionTravelBanner.png": "/SunnyTour/static/media/heroSectionTravelBanner.42b45e71075379be4470.png",
+    "index.html": "/SunnyTour/index.html",
+    "static/media/sun-logo.svg": "/SunnyTour/static/media/sun-logo.9f4e5fc1e6beca3b2747ad47b46a368f.svg",
+    "static/media/network.svg": "/SunnyTour/static/media/network.8fa202713af47705ccee81fe40ba576e.svg",
+    "static/media/arrow.svg": "/SunnyTour/static/media/arrow.752f3d2b38faee820d9b5870dab16adc.svg",
+    "static/media/profile.svg": "/SunnyTour/static/media/profile.06b050f739698e4120e5bc8fb8c63939.svg",
+    "static/media/checkmark.svg": "/SunnyTour/static/media/checkmark.34180350daca4cb3a34045ba376a2d09.svg",
+    "static/media/plus.svg": "/SunnyTour/static/media/plus.01a103bdaff968f33f6cb9a59ab58266.svg",
+    "main.ebf1cb38.css.map": "/SunnyTour/static/css/main.ebf1cb38.css.map",
+    "main.26bddea6.js.map": "/SunnyTour/static/js/main.26bddea6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebf1cb38.css",
+    "static/js/main.26bddea6.js"
+  ]
+}
