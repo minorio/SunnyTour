@@ -1,13 +1,299 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.ant-select-selection-placeholder {
+  color: #1A383F !important;
+}
+
+:root {
+  --picker-green: #007a78;
+  --picker-green-light: #c7e3e2;
+  --picker-text: #ffffff;
+  width: 100%;
+}
+
+
+.ant-picker-cell-range-start:not(.ant-picker-cell-range-end) .ant-picker-cell-inner {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.ant-picker-cell-range-end:not(.ant-picker-cell-range-start) .ant-picker-cell-inner {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border: none;
+}
+
+.custom-range-picker .ant-picker-clear,
+.custom-range-picker .ant-picker-suffix {
+  display: none;
+}
+
+.ant-picker-cell:hover .ant-picker-cell-inner {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.ant-picker-input > input {
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.ant-picker-input > input::placeholder {
+  color: #1A383F !important;
+}
+
+.ant-picker-panel-container {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ant-picker-content th {
+  font-weight: 500;
+  color: #9c9c9c;
+  text-transform: lowercase;
+}
+
+.ant-picker-cell-inner {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+  transition: background 0.3s;
+}
+
+.ant-select {
+  background-color: white;
+  border-right: #000;
+  border-width: 1px;
+}
+
+.ant-select-selector {
+  background-color: white;
+}
+
+.ant-select-selector {
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 6px 12px !important;
+  box-shadow: none !important;
+}
+
+.range-picker-wrapper {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 0 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ant-picker-cell-inner {
+  padding: 2px;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start
+.ant-picker-cell-inner,
+.ant-picker-cell-in-view.ant-picker-cell-range-end
+.ant-picker-cell-inner {
+border-radius: 100% !important;
+width: 65% !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start
+.ant-picker-cell-inner {
+background-color: #297D7F !important;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-range-end
+.ant-picker-cell-inner {
+background-color: #297D7F !important;
+}
+
+
+.ant-picker-cell-in-view.ant-picker-cell-today
+.ant-picker-cell-inner::before {
+border-color: #557960e5 !important;
+}
+
+
+.ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before,
+.ant-picker-cell-in-view.ant-picker-cell-in-range::before,
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before,
+.ant-picker-time-panel-column
+> li.ant-picker-time-panel-cell-selected
+.ant-picker-time-panel-cell-inner {
+background: #F3F2F2 !important;
+}
+
+.ant-btn-primary {
+background-color: #1f9643e5 !important;
+border-color: #1f9643e5 !important;
+
+}
+
+.ant-picker-panel-container.ant-picker-date-panel-container {
+  border-radius: 32px;
+  padding: 16px;
+  margin-top: 39px;
+  margin-left: 300px !important;
+}
+
+.ant-picker-range-wrapper, .ant-picker-header-view{
+  font-family: 'Comfortaa', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.ant-picker-dropdown {
+    min-width: 931px !important;
+}
+
+.ant-picker-header button {
+  font-family: 'Comfortaa', sans-serif !important;
+  font-weight: 500 !important;
+}
+.ant-picker-header-super-prev-btn,
+.ant-picker-header-super-next-btn {
+  display: none !important;
+}
+
+.ant-picker-header-next-btn,
+.ant-picker-header-prev-btn {
+  color: #000 !important;
+}
+
+.ant-picker-range-arrow {
+  display: none !important;
+}
+
+.ant-picker-footer{
+  border: none !important; 
+}
+.ant-picker-footer-extra {
+padding: 0 !important;
+}
+
+.ant-picker-date-panel,
+.ant-picker-body {
+  padding: 0 !important;
+}
+
+.ant-picker-panel:first-child {
+padding-right: 12px !important;
+}
+
+.ant-picker-panel:last-child {
+  padding-left: 12px !important;
+}
+
+.ant-picker-active-bar {
+  background: #1f9643e5 !important;
+}
+
+.ant-picker-month-btn:hover,
+.ant-picker-year-btn:hover {
+  color: #007a78 !important;
+}
+
+.ant-picker-input,
+.ant-select {
+  font-family: 'Comfortaa', sans-serif !important;
+  font-size: 16px;
+}
+
+.ant-select-selection-wrap {
+  padding-inline-end: 76px !important;
+}
+
+.ant-select-arrow{
+  color: #000 !important;
+}
+
+@media (max-width: 1234px) {
+  .ant-select-selection-wrap {
+    padding-inline-end: 26px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ant-select-selection-wrap {
+    padding-inline-end: 0 !important;
+  }
+}
+
+.ant-select-tree-dropdown {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #d9d9d9;
+}
+
+.ant-select-tree-list-item {
+  padding: 8px 12px;
+}
+
+.ant-select-tree-list-item-selected {
+  background-color: #f0f2ff;
+}
+
+.ant-select-tree-node-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.ant-select-tree-node-content-wrapper.ant-select-tree-node-content-wrapper-normal::before {
+  color: #bfbfbf;
+}
+
+.ant-select-tree-node-content-wrapper.ant-select-tree-node-selected::before {
+  color: #1890ff;
+}
+
+.ant-select-tree-switcher {
+  margin-right: 8px;
+}
+
+.ant-select-dropdown,
+.ant-tree-select-dropdown {
+  width: 344px !important;
+}
+.ant-select-item-option, 
+.ant-select-tree-list-holder-inner {
+  font-family: 'Comfortaa', sans-serif !important;
+  font-size: 16px;
+}
+
+.ant-select-item-option{
+  padding: 19px !important;
+
+}
+.ant-select-tree-treenode {
+  padding: 19px 0 !important;
+}
+
+.ant-select-tree-switcher {
+  display: none;
+}
+
+.ant-select-tree-title {
+  width: 100%;
+}
+
+.ant-select-tree-list-scrollbar-thumb {
+  background: transparent !important;
 }

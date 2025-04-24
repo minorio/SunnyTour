@@ -1,0 +1,161 @@
+.flightSearchContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: white;
+  border-radius: 64px;
+  padding: 32px 20px;
+  margin: 0 5px;
+}
+
+.inputContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.customButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  padding: 2px 4px;
+  background-color: #297D7F !important;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  width: 192px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.customButton span {
+  padding-left: 32px;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.customButton:hover {
+  background-color: #005f5e !important;
+  color: white !important;
+}
+
+.customRangePicker {
+  width: 260px;
+  font-size: 1vw;
+  color: #333;
+  background-color: transparent;
+}
+
+.divider {
+  width: 2px;
+  height: 100%;
+  background-color: #2A2A2A;
+  margin: 0 8px;
+}
+.rangePickerExtraFooter{
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rangePickerDaysCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.choose span,
+.cancel span{
+  font-size: 16px;
+  border-radius: 32px;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.choose,
+.cancel {
+  padding: 28px 24px;
+  border-radius: 32px;
+}
+
+.cancel {
+  color: #1A383F;
+  background-color: #F3F2F2;
+  margin-right: 8px;
+}
+
+.choose {
+  color: #fff;
+  background-color: #297D7F;
+  margin-left: 8px;
+}
+
+@media (max-width: 1000px) {
+  .inputGroup {
+    flex-direction: column;
+    width: 70%;
+    align-items: end;
+    border-radius: 26px;
+  }
+  .customSelect {
+    width: 90%;
+  }
+  .customCalendarPopup {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .divider {
+    display: none;
+  } 
+
+}
+
+.treeLabel{
+  display: flex;  
+  align-items: center;
+}
+.treeLabel img {
+  margin-right: 17px;
+}
+
+.treeKey{
+  float: inline-end;
+  color: #A0A0A0;
+  font-weight: 500;
+}
+
+.labelContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parentLabelContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parentCountry {
+  float: inline-end;
+  color: #A0A0A0;
+  font-weight: 500;
+}
+
+.parentLabel span {
+  color: #A0A0A0;
+}

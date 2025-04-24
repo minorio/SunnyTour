@@ -1,0 +1,192 @@
+@import '../../styles/variables';
+
+.overview {
+  //height: 100vh;
+  max-width: 1197px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 60vh;
+  margin: 100px auto;
+  flex-direction: column;
+  padding: 20px;
+  &__title {
+    line-height: 130%;
+    font-weight: 400;
+    text-align: center;
+    color: $color-dark;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  &__title span {
+    color: $color-orange;
+  }
+
+  &__tags {
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 90%;
+    margin-top: 40px;
+    gap: 8px;
+
+    &_tag {
+      cursor: pointer;
+      background-color: $color-gray;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: 400;
+      color: $color-dark-gray;
+      margin: 0;
+      white-space: normal;
+
+      padding: 8px 12px;
+      font-size: 18px;
+      transform: rotate(0deg) !important;
+      margin-top: 0 !important;
+      &.tag1 {
+        transform: rotate(-14deg);
+      }
+      &.tag2 {
+        transform: rotate(0deg);
+        margin-top: -90px;
+        white-space: nowrap;
+      }
+      &.tag3 {
+        transform: rotate(-5deg);
+        margin-top: -90px;
+      }
+      &.tag4 {
+        transform: rotate(-10deg);
+      }
+      &.tag5 {
+        transform: rotate(10deg);
+      }
+      &.tag6 {
+        transform: rotate(17deg);
+      }
+      &.tag7 {
+        transform: rotate(-35deg);
+      }
+      &.tag8 {
+        transform: rotate(-27deg);
+      }
+      &.tag9 {
+        transform: rotate(-25deg);
+      }
+      &.tag10 {
+        transform: rotate(0deg);
+      }
+      &.tag11 {
+        transform: rotate(7deg);
+      }
+      &.tag12 {
+        transform: rotate(0deg);
+      }
+    }
+    &_tag:hover{
+      color: $color-white;
+      background-color: $color-teal;
+    }
+
+
+    &_tagEffect {
+      color: $color-white;
+      background-color: $color-teal;
+    }
+  }
+}
+
+// Adaptive for mobile
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .overview {
+    &__title {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    &__tags {
+      gap: 10px;
+
+      &_tag {
+        font-size: 24px;
+        padding: 10px 16px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 993px) {
+  .overview {
+    //min-height: 100vh;
+    margin: 200px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    &__tags {
+      width: 650px;
+      margin-top: 176px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+
+      &_tag {
+        font-size: 32px;
+        padding: 10px 16px;
+        &.tag1 {
+          transform: rotate(-14deg) !important;
+        }
+        &.tag2 {
+          transform: rotate(0deg) !important;;
+          margin-top: -90px !important;;
+          white-space: nowrap;
+        }
+        &.tag3 {
+          transform: rotate(-5deg) !important;;
+          margin-top: -90px;
+        }
+        &.tag4 {
+          transform: rotate(-10deg) !important;;
+        }
+        &.tag5 {
+          transform: rotate(10deg) !important;;
+        }
+        &.tag6 {
+          transform: rotate(17deg) !important;;
+        }
+        &.tag7 {
+          transform: rotate(-17deg) !important;;
+        }
+        &.tag8 {
+          transform: rotate(-27deg) !important;;
+        }
+        &.tag9 {
+          transform: rotate(0deg) !important;
+        }
+        &.tag10 {
+          transform: rotate(0deg) !important;;
+        }
+        &.tag11 {
+          transform: rotate(7deg) !important;;
+        }
+        &.tag12 {
+          transform: rotate(0deg)  !important;;
+        }
+      }
+    }
+  }
+}

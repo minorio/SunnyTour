@@ -1,0 +1,172 @@
+@import '../../styles/variables';
+
+.reviews {
+  max-width: 1320px;
+  margin: 200px auto 100px auto;
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-dark-gray;
+  }
+  &__title {
+    font-size: 72px;
+    font-weight: 400;
+    color: $color-dark;
+    margin-top: 24px;
+    margin-bottom: 56px;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    gap: 24px;
+  }
+
+  &__card {
+    width: calc(33% - 13.33px);
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 250px;
+    &_bg {
+      position: relative;
+    }
+    &_quotes{
+      position: absolute;
+      z-index: 2;
+      margin-top: 50px;
+      margin-left: -400px;
+    }
+    &_text {
+      position: absolute;
+      margin-top: -240px;
+      font-size: 16px;
+      font-weight: 400;
+      width: 28%;
+      text-align: start;
+      line-height: 140%;
+      padding: 0 20px;
+      color: $color-dark;
+    }
+
+    &_author {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      margin-top: -50px;
+    }
+
+    &_authorBox {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 12px;
+    }
+    &_authorName {
+      color: $color-dark;
+    }
+
+    &_authorUsername {
+      margin-top: 8px;
+      color: $color-dark-gray;
+      font-size: 16px;
+    }
+  }
+}
+
+// Adaptive for mobile
+
+@media (max-width: 1180px) {
+  .reviews {
+    margin: 100px auto;
+    padding: 0 20px;
+    height: 100%;
+    &__cards {
+      flex-wrap: wrap;
+    }
+    &__card {
+      width: 100%;
+      min-height: auto;
+      position: relative;
+      &_text {
+        width: 40%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .reviews {
+    height: auto;
+    max-height: 100%;
+    margin: 80px auto;
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 32px;
+    }
+
+    &__cards {
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    &__card {
+      width: 100%;
+      min-height: auto;
+      position: relative;
+      &_text {
+        margin-top: -240px;
+        width: 60%;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews {
+  margin: 60px auto;
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  &__cards {
+    gap: 20px;
+  }
+
+  &__card {
+    padding: 15px;
+
+    &_quotes {
+      width: 32px;
+      margin-bottom: 10px;
+    }
+
+    &_text {
+      font-size: 14px;
+      width: 70%;
+    }
+
+    &_authorAvatar {
+      width: 32px;
+      height: 32px;
+    }
+
+    &_authorName {
+      font-size: 14px;
+    }
+
+    &_authorUsername {
+      font-size: 14px;
+      margin-top: 2px;
+    }
+  }
+}}
+

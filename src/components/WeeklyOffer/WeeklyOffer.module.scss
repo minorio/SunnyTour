@@ -1,0 +1,267 @@
+@import '../../styles/variables';
+
+.offer {
+  max-width: 1320px;
+  //max-height: 618px;
+  margin: 0 auto;
+  padding: 0 20px;
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-dark-gray;
+  }
+  &__title {
+    font-size: 72px;
+    font-weight: 500;
+    color: $color-dark;
+    margin-top: 24px;
+    margin-bottom: 56px;
+  }
+  &__box{
+    display: flex;
+    flex-direction: row;
+    max-height: 618px;
+  }
+
+  &__side{
+    max-width: 415px;
+    margin-right: 33px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    margin-top: 31px;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-dark;
+    margin-bottom: 20px;
+  }
+  &__clients{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 64px 0;
+    &_img{
+      width: 50%;
+      position: relative;
+    }
+    &_img img{
+      transition: .3s transform;
+      cursor: pointer;
+    }
+    &_img img:hover{
+      transform: scale(1.2);
+    }
+    &_img img:first-of-type{
+      z-index: 1;
+    }
+    &_img img:nth-of-type(2){
+      z-index: 2;
+      position: absolute;
+      left: 38px;
+    }
+    &_img img:nth-of-type(3){
+      z-index: 3;
+      position: absolute;
+      left: 76px;
+    }
+    &_img img:nth-of-type(4){
+      z-index: 4;
+      position: absolute;
+      left: 114px;
+    }
+    &_subtitle{
+      width: 50%;
+      position: relative;
+    }
+    &_subtitle:before{
+      content: "";
+      position: absolute;
+      left: -16px;
+      top: -6px;
+      bottom: 0;
+      right: 0;
+      height: 56px;
+      width: 1px;
+      background-color: $color-orange;
+    }
+
+  }
+  &__details {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+  &__detail {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $color-gray;
+    color: $color-dark;
+    padding: 7px 16px;
+    border-radius: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &__route{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    &_bg{
+      width: 100%;
+      height: auto;
+      max-height: 618px;
+      object-fit: cover;
+    }
+    &_arrow{
+      position: absolute;
+      right: 60px;
+      top: 0;
+      cursor: pointer;
+      object-fit: contain;
+      width: 56px;
+      height: 56px;
+      z-index: 10;
+      transition: transform 0.2s;
+    }
+    &_arrow:hover{
+      transform: scale(1.1);
+    }
+}}
+
+// Adaptive for mobile
+
+@media (max-width: 868px) {
+  .offer {
+    height: auto;
+    padding: 0 15px;
+
+    &__title {
+      font-size: 48px;
+      margin-bottom: 32px;
+    }
+
+    &__box {
+      flex-direction: column;
+    }
+
+    &__side {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &__clients {
+      margin: 32px 0;
+
+      &_img {
+        align-items: center;
+        //width: 50%;
+
+        img {
+          &:nth-of-type(2) {
+            left: 20%;
+          }
+
+          &:nth-of-type(3) {
+            left: 40%;
+          }
+
+          &:nth-of-type(4) {
+            left: 60%;
+          }
+        }
+      }
+    }
+
+    &__route {
+      &_bg {
+        max-height: 400px;
+      }
+      &_arrow {
+        width: 40px;
+        height: 40px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .offer {
+    &__title {
+      font-size: 36px;
+      margin-bottom: 24px;
+    }
+
+    &__description {
+      font-size: 14px;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+    &__clients {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 24px 0;
+
+      &_img {
+        width: 80%;
+        margin-bottom: 16px;
+
+        img {
+          &:nth-of-type(2) {
+            left: 10%;
+          }
+
+          &:nth-of-type(3) {
+            left: 20%;
+          }
+
+          &:nth-of-type(4) {
+            left: 30%;
+          }
+        }
+      }
+
+      &_subtitle {
+        font-size: 14px;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &__details {
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    &__detail {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+
+    &__route {
+      &_bg {
+        max-height: 300px;
+      }
+
+      &_arrow {
+        width: 24px;
+        height: 24px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
